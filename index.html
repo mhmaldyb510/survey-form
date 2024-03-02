@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">thank you for helping us to improve the platform</p>
+    <form action="" id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">name <input type="text" id="name" placeholder="Enter your name"
+                    required /></label>
+            <br />
+            <label for="email" id="email-label">email <input type="email" id="email" placeholder="Enter your email"
+                    required /></label>
+            <br />
+            <label for="number" id="number-label">age
+                <input type="number" id="number" max="90" min="16" placeholder="age" /></label>
+            <br />
+            <label for="dropdown" id="dropdown-label">What is your current role?
+                <select id="dropdown">
+                    <option value="0">(Select an option)</option>
+                    <option value="1">Student</option>
+                    <option value="2">graduated</option>
+                </select>
+            </label>
+            <br />
+            <p>Would you recommend us to your friends </p>
+            <label><input type="radio" name="recommendation" value="definitely" checked class="inline"> Definitely
+            </label>
+            <label><input type="radio" name="recommendation" value="maybe" class="inline"> Maybe</label>
+            <label><input type="radio" name="recommendation" class="inline" value="not-sure"> Not sure</label>
+            <p>What can we improve ?</p>
+            <label for=""><input type="checkbox" value="front-end-projects" class="inline"> Front-end Projects</label>
+            <label for=""><input type="checkbox" value="back-end-projects" class="inline"> Back-end Projects</label>
+            <label for=""><input type="checkbox" value="videos" class="inline"> Videos</label>
+            <label for=""><input type="checkbox" value="blog" class="inline"> Blog</label>
+            <label for=""><input type="checkbox" value="courses" class="inline"> Courses</label>
+            <label>additional comments <textarea></textarea></label>
+            <br />
+        </fieldset>
+        <input type="submit" id="submit">
+    </form>
+</body>
+
+</html>
